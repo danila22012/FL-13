@@ -141,7 +141,7 @@ section::before{
     z-index: 2;
 }
 .contact-form div input:hover{
-    background: lightblue;
+    background: lightseagreen;
     color: #fff;
 }
 
@@ -172,7 +172,7 @@ section::before{
     transition: 0.3s;
 }
 #contact button:hover{
-    background:#20b2aa; 
+    background:lightseagreen; 
     color: #fff;
     border: none;
 }
