@@ -1,0 +1,259 @@
+// Write your styles here
+@import "variables1";
+@import "variables2";
+
+@mixin max-width($property){
+    max-width:$property;
+}
+@mixin flex($property, $value){
+    display: flex;
+    align-items: $property;
+    justify-content: $value;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: $body-background;
+}
+
+
+
+
+.header{
+    background: $header-background;
+    height: 100vh;
+    color: $font-color;
+    border-bottom-right-radius: 41%;
+    .header-wrap{
+        padding-top: 25px;
+        margin: auto;
+        @include max-width(1530px);
+        display: flex;
+        flex-direction: column;
+
+        
+        .header_text{
+            margin:60px 0 40px -55px;
+            font-family: $header-font;
+            font-size: 20px;
+            white-space: pre;
+           
+        }
+        
+      
+        .login{
+            color: #fff;
+            font-family: $header-font;
+            margin-left: 190px;
+            font-size: 20px;
+
+            
+        }
+    }
+    
+
+}
+.header_button{
+    font-family: $header-font;
+    border: none;
+    background: $button-background;
+    color: $font-color-white;
+    padding: 15px 60px;
+    font-size: 20px;
+
+}
+.header_heading{
+    font-size: 90px;
+    line-height: 90px;
+    font-weight: 900;
+    font-family: $header-font;
+    @include max-width(830px);
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 2;
+    &::before{
+        top: 105px;
+        content: " ";
+        position: absolute;
+        width: 390px;
+        height: 65px;
+        background: $before-color;
+        z-index: -1;
+
+    }
+    
+}
+.landing-logo{
+    @include flex(center, space-between);
+    position: relative;
+    @include max-width(160px);
+    
+    margin-bottom: 85px;
+    img{
+        height: 54px;
+    }
+    p{
+        font-family: $header-font;
+        font-size: 24px;
+        font-weight: 600;
+        padding-right:  30px;
+    }
+    
+   
+    span{
+        font-weight: normal;
+        position: absolute;
+        top: 30px;
+        left: 68px;
+        font-size: 12px;
+        
+    }
+    
+}
+
+.section{
+
+    background: $section-background;
+    position: relative;
+    z-index: -5;
+    .section_text{
+        
+        text-align: center;
+        font-family: $content-font;
+        font-size: 48px;
+        font-weight: 600;
+        color:$font-color;
+        margin: 25px 0 40px 0;
+        position: relative;
+        &::before{
+           
+           @extend  .header_heading;
+           width: 216px;
+           top: -6px;
+           left: 960px;
+           height: 60px;
+       }
+
+    }
+   
+    
+      
+
+    
+}
+.section_card_wrap{
+    @include max-width(1130px);
+    margin:auto;
+    .section_card{
+        padding: 25px;
+        border-radius: $radius;
+        @include flex(center, space-between);
+        height: 350px;
+        margin-bottom: 30px;
+
+        background: $content-background;
+        &_img{
+            max-width: 370px;
+            height: 300px;
+            border-radius: $radius;
+            
+        }        
+        &_right_container{
+        @include max-width(515px);
+        @include flex( center, center);
+        flex-direction:column;
+        font-family: $header-font;
+        margin:auto;
+        
+        .section_card_heading{
+            font-size: 30px;
+            color: $font-color-white;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+        .section_card_text{
+                color: $footer-font-color;
+                font-size: 18px;
+                word-spacing: 2px;
+                margin-bottom: 15px;
+        }
+        a{
+                @extend .section_card_text
+            }
+        }
+
+
+    }
+}
+.section_banner{
+    max-width: 1200px;
+    height: 180px;
+    margin: auto;
+    background: $banner-background;
+    border-radius: $radius;
+    @include flex(center, space-around);
+    position: relative;
+    z-index: -2;
+    top: 85px;
+    div{
+        
+        
+        .section_banner_heading{
+            
+            color: $font-color;
+            font-size: 36px;
+            font-family: $content-font;
+            font-weight: 800;
+            position: relative;
+            z-index: 2;
+            margin-bottom: 15px;
+            &::before{
+                
+                @extend .header_heading;
+                width: 77px;
+                height: 46px;
+                left: 141px;
+                top: -5px;
+            }
+        }
+        .section_banner_text{
+            font-size: 20px;
+            color:$footer-font-color;
+            font-family: $content-font;
+        }
+
+    }
+    button{
+        @extend .header_button
+    }
+}
+.footer{
+    height: 305px;
+    background: $footer-background;
+    position: relative;
+    z-index: -6;
+    &-wrap{
+        padding-top: 170px;
+        @include flex(center, space-around);
+        .footer_logo{
+            @extend .landing-logo;
+            color: $footer-font-color;
+            min-width: 160px;
+           margin-bottom: 0;
+        }
+        .footer_text{
+            max-width: 365px;
+            color:$footer-font-color;
+            font-family: $content-font;
+        }
+        .footer-cr{
+            color:$footer-font-color;
+            font-family: $content-font;
+        }
+
+    }
+}
