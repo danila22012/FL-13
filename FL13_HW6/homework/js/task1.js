@@ -10,20 +10,20 @@ function receipt(){
 
     check = +prompt('enter check number')
     if(isNaN(check)) {
-        alert('wrong value, try again')
+        alert('Invalid value')
         return
     } else if(check <= 0){
-        alert('wrong value, try again')
+        alert('Invalid value')
         return
     }
 
 
     tipPerc = +prompt('enter tip percentage ')
     if(isNaN(tipPerc)){
-        alert('wrong value, try again')
+        alert('Invalid value')
         return 
     } else if (tipPerc >= 100 || tipPerc < 0){
-        alert('wrong value, try again')
+        alert('Invalid value')
         return
     } else if (tipPerc === 0){
         tipNum = 0;

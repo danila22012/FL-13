@@ -3,7 +3,7 @@ task2()
 function task2(){
     let value = prompt('enter your value')
     if(value === '' || value.indexOf(' ') >= 0 ){
-        alert('wrong value')
+        alert('Invalid value')
         return
     }
     let arr = value.split('')
