@@ -63,12 +63,6 @@ function Fighter(fighter){
         fighter.tempHP = hp;
         fighter.tempWin = win;
         fighter.tempLoses = lose;
-
-        
-        
-        
-        // console.log(agi,str)
-        
         
     }
     this.heal = function(amount){
