@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    padding-top: 50px;
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+
+}
+#preview{
+   display: flex;
+   justify-content: center;
+   
+}
+#preview img{
+    max-height: 450px;
+}
+#containerBooks{
+    margin: 25px;
+    width:300px
+}
+#menu li{
+    margin:10px 0;
+    list-style: armenian;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.btn__edit{
+    margin-right: 25%;
+    float:right;
+    
+}
+#btn__add{
+    float: right;
+    margin-right: 45%;
+    padding: 10px;
+
+}
+#decription p{
+    font-size: 28px;
+    margin:25px 10px
+    
+}
+#edit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+#edit input, #edit div{
+    
+    margin: 5px 0
+}
+#edit div{
+    display: flex;
+    justify-content: space-between;
+}
