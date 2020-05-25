@@ -77,5 +77,6 @@ function FrontendLab(students, failedLimit){
 const lab = new FrontendLab(students, 1)
 lab.addHomeworkResult(homework[0])
 lab.addHomeworkResult(homework[1])
+lab.printStudentsList()
 
 
