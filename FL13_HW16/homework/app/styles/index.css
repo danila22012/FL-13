@@ -1,0 +1,23 @@
+/* Your code goes here */
+
+form > *:not(:first-child) {
+  margin-left: 10px;
+}
+
+.list {
+  list-style: none;
+}
+
+.listItem {
+  height: 20px;
+  display: flex;
+}
+
+input:disabled {
+  background: #fff;
+  border: none;
+}
+
+.listItem__id {
+  width: 100px;
+}
