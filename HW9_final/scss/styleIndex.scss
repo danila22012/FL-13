@@ -289,7 +289,7 @@
         font-weight: 500;
         letter-spacing: 0;
         line-height: 32px;
-        width: 360px;
+        
         
     }
     &__descr{
@@ -470,7 +470,8 @@
     }
     &__bg{
         background: url('../img/Bg testimonial.png') center/cover no-repeat;
-        
+        max-width: 1440px;
+        margin: 0 auto;
         height: 529px;
         
     }
@@ -563,7 +564,12 @@
             margin-top: 17px;
             margin-bottom: 50px;
         }
-        
+        &--bg{
+            max-width: 1440px;
+            margin: 0 auto;
+            background:  #F8F8F8;
+            display: flex;
+        }
 
     }
     
@@ -640,7 +646,7 @@
 .formContainer{
     padding: 0 !important;
     position: absolute;
-    top: -65px;
+    top: -72px;
     box-shadow: 0px 1px 5px 0px black;
     &__title{
         display: flex;
@@ -707,17 +713,24 @@
     }
 }
 .footer{
-    border-top: 1px solid rgba($color: $font-color, $alpha: 0.4);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #F8F8F8;
+    
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    
+    width: 100%;
+    &__bg{
+        border-top: 1px solid rgba($color: $font-color, $alpha: 0.4);
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        max-width: 1440px;
+        background: #F8F8F8;
+    }
     &__icons img{
         margin-right: 25px;
 
@@ -929,6 +942,18 @@
     }
 }
 @media screen and (max-width:430px){
+    .header{
+        text-align: center;
+        padding-top: 10px;
+        &__bot--title{
+            margin-top: 15px;
+        }
+        &__top--logo{
+            margin-bottom:10px;
+            
+        }
+        
+    }
     .header__top{
         
         flex-wrap: wrap;
@@ -936,6 +961,15 @@
     }
     .testimonials__content button {
         display: none;
+    }
+    .aboutUs__content--video{
+        height: 185px;
+    }
+    .postItem{
+        
+        &__img{
+        width: 320px;
+    }
     }
     .footer__icons img{
         margin-right: 5px;
@@ -945,5 +979,17 @@
 
         width: 100%;
     }
-    
+    .footer__icons img{
+        margin-right: 5px;
+
+    }
+   
+    .footer__rights{
+        text-align: center;
+    }
+    .footer__icons{
+        display: flex;
+        margin-right: 5px;
+
+    }
 }

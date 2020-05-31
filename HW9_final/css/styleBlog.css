@@ -118,6 +118,9 @@
       background: url("../img/Imgage post 2.png") center/cover no-repeat; }
     .blog__content .bg3 {
       background: url("../img/Image post 3.png") center/cover no-repeat; }
+    .blog__content .LinkToPost {
+      width: 100%;
+      height: 100%; }
     .blog__content--caption {
       background: #FCF6F6;
       position: relative; }
@@ -209,16 +212,20 @@
   margin-bottom: 120px; }
 
 .footer {
-  border-top: 1px solid rgba(77, 76, 73, 0.4);
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #F8F8F8;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px; }
+  height: 70px;
+  width: 100%; }
+  .footer__bg {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 1440px;
+    background: #F8F8F8; }
   .footer__icons img {
     margin-right: 25px; }
   .footer__logo {
@@ -246,7 +253,17 @@
     align-items: center; }
   .header__top nav a {
     margin-right: 10px; } }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 400px) {
+  .header {
+    padding-top: 10px; }
+    .header__bot--title {
+      margin-top: 15px; }
+    .header__top--logo {
+      margin-bottom: 10px; }
+
+  .blog__content--video {
+    height: 229px; }
+
   .author__descr--info {
     display: block; }
   .author__descr .dot {
@@ -254,5 +271,15 @@
   .author__descr .stars {
     margin-left: 0; }
 
+  .readMore {
+    margin-bottom: 50px; }
+
   .footer__icons img {
+    margin-right: 5px; }
+
+  .footer__rights {
+    text-align: center; }
+
+  .footer__icons {
+    display: flex;
     margin-right: 5px; } }

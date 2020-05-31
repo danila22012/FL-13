@@ -251,8 +251,7 @@
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 0;
-    line-height: 32px;
-    width: 360px; }
+    line-height: 32px; }
   .postItem__descr {
     font-size: 15px; }
   .postItem__analytics {
@@ -377,6 +376,8 @@
       margin-bottom: 54px; }
   .testimonials__bg {
     background: url("../img/Bg testimonial.png") center/cover no-repeat;
+    max-width: 1440px;
+    margin: 0 auto;
     height: 529px; }
   .testimonials__content {
     display: flex;
@@ -443,6 +444,11 @@
     background: #F8F8F8;
     margin-top: 17px;
     margin-bottom: 50px; }
+  .contactUs__content--bg {
+    max-width: 1440px;
+    margin: 0 auto;
+    background: #F8F8F8;
+    display: flex; }
 
 .iconsTitle__title {
   margin-top: 75px;
@@ -498,7 +504,7 @@
 .formContainer {
   padding: 0 !important;
   position: absolute;
-  top: -65px;
+  top: -72px;
   box-shadow: 0px 1px 5px 0px black; }
   .formContainer__title {
     display: flex;
@@ -548,16 +554,21 @@
     font-size: 15px; }
 
 .footer {
-  border-top: 1px solid rgba(77, 76, 73, 0.4);
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #F8F8F8;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px; }
+  height: 70px;
+  width: 100%; }
+  .footer__bg {
+    border-top: 1px solid rgba(77, 76, 73, 0.4);
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 1440px;
+    background: #F8F8F8; }
   .footer__icons img {
     margin-right: 25px; }
   .footer__logo {
@@ -680,6 +691,14 @@
     .header__top--nav a {
       margin-right: 10px; } }
 @media screen and (max-width: 430px) {
+  .header {
+    text-align: center;
+    padding-top: 10px; }
+    .header__bot--title {
+      margin-top: 15px; }
+    .header__top--logo {
+      margin-bottom: 10px; }
+
   .header__top {
     flex-wrap: wrap;
     justify-content: center; }
@@ -687,8 +706,24 @@
   .testimonials__content button {
     display: none; }
 
+  .aboutUs__content--video {
+    height: 185px; }
+
+  .postItem__img {
+    width: 320px; }
+
   .footer__icons img {
     margin-right: 5px; }
 
   .formInput {
-    width: 100%; } }
+    width: 100%; }
+
+  .footer__icons img {
+    margin-right: 5px; }
+
+  .footer__rights {
+    text-align: center; }
+
+  .footer__icons {
+    display: flex;
+    margin-right: 5px; } }
