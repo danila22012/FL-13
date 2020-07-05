@@ -1,0 +1,307 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+
+
+body {
+  font-family: roboto;
+}
+
+.post-1 {
+	background: #F3D250;
+}
+.post-2 {
+	background: #8D8741;
+}
+.post-3 {
+	background: #659DBD;
+}
+.post-4 {
+	background: #DAAD86;
+}
+
+/* Your styles go here */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #0b192f;
+}
+header{
+  
+  display: flex;
+  max-width: 980px;
+  margin: auto;
+  justify-content: space-between;
+  align-items:center;
+  background: #162b4d;
+}
+
+#btn__header{
+  display: none;
+  
+}
+#btn__header i{
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+}
+#logo{
+  height: 24px;
+  margin-left: 20px;
+  color: #fff;
+  font-weight: 300;
+}
+#logo span{
+  color: #7f184f;
+  font-weight: 300;
+}
+.menu{
+  margin-right: 25px;
+ padding: 30px 0;
+}
+.menu a{
+  padding: 30px 25px;
+  text-decoration: none;
+  color:#fff;
+  font-size:14px;
+}
+.menu a:hover{
+  color:#b8b8b8;
+  background: #314566;
+}
+main{
+  
+  display: flex;
+  max-width: 980px;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+}
+article{
+  margin: auto;
+}
+.post{
+  display: flex;
+  height: 245px;
+  cursor: pointer;
+  color: #666049;
+  max-width: 740px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.post picture{
+  background: #F3D250;
+}
+.post picture{
+  width:370px;
+  height: 245px;
+}
+.post .content{
+  width: 370px;
+}
+.post img:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+.post h2{
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: 1px;
+
+}
+
+.post div p{
+  
+  font-size: 12px;
+  margin-top: 10px;
+  font-weight: 300;
+  line-height: 22px;
+}
+.content{
+  display: flex;
+  padding: 20px 15px 25px 15px;
+  height: 245px;
+}
+.post img{
+  width: 370px;
+  max-height: 245px;
+}
+.post aside{
+  font-weight: 300;
+  position: relative;
+  top: -10px;
+}
+.post aside span{
+  font-size:32px;
+  
+}
+.post-2, .post-4{
+  flex-direction: row-reverse;
+}
+.post-1 aside,.post-3 aside {
+  margin-left: 20px;
+}
+.post-2 aside, .post-4 aside{
+  margin-right: 20px;
+}
+.post-2 p, .post-4 p {
+  text-align: right;
+}
+.post-2 h2, .post-4 h2{
+  text-align: right;
+}
+.post:last-child{
+  background: url(../img/post5.jpg) center/cover no-repeat;
+  color: #d2dddf;
+  height: 350px;
+}
+#post-5{
+  justify-content: flex-end;
+  flex-direction: column;
+  margin-bottom: 50px;
+
+}
+
+.news{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width:225px;
+  margin: 0 0 20px 15px;
+  background: #fff;
+  
+}
+.news img{
+  max-width: 225px;
+}
+
+.news__descrpt{
+  margin: 15px 20px 10px 15px;
+}
+.news__descrpt p {
+  margin: 10px 0 ;
+  color: #bcbcbc;
+  font-size: 12px;
+  line-height: 22px;
+}
+.news__descrpt h2{
+  font-size: 26px;
+  font-weight: 200;
+  color:#676767;
+}
+.news__descrpt button{
+  border: none;
+  border: 2px solid #676767;
+  padding: 8px;
+  background: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.news__descrpt button:hover{
+  border-top:2px solid #fff;
+  border-left:2px solid #fff;
+  border-right:2px solid #fff;
+  border-bottom: 2px solid #676767;
+  outline: none;
+}
+.footer{
+   
+  display: flex;
+  max-width: 980px;
+  margin: auto;
+  justify-content: space-between;
+  align-items:center;
+  background: #162b4d;
+}
+.footer div{
+  margin: 17px 20px 25px 20px;
+  color: #6a7585;
+}
+.footer div p {
+  margin-top: 8px;
+  font-size: 12px;
+}
+#post-2,#post-4{
+  flex-direction: row-reverse;
+}
+@media screen and (max-width:1000px){
+  main article{
+    width: 370px;
+    margin: 0;
+  }
+  .post{
+    margin-bottom: 245px;
+      
+  }
+  .post:last-child{
+    margin-bottom: 0;
+  }
+  .content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content aside{
+    margin: 0;
+    margin-top: 20px;
+  }
+  .content h2, .content p{
+    text-align: center;
+  }
+  
+
+    
+}
+@media screen and (max-width:768px){
+  .menu{
+    display: none;
+  }
+  #logo{
+    padding: 10px 0 40px 0;
+    margin:0;
+    
+  }
+  #btn__header{
+    display: block;
+    margin-top: 10px;
+  }
+  header{
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+}
+@media screen and (max-width:640px){
+  main{
+    flex-direction: column;
+    align-items: center;
+  }
+  .news {
+    margin: 0;
+    margin-top: 15px;
+    
+    max-width: 370px;
+  }
+  .news img{
+    max-width: 370px;
+  }
+  .footer{
+    flex-direction: column;
+    padding-bottom:15px ;
+
+  }
+  .footer div {
+    margin: 0;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+}

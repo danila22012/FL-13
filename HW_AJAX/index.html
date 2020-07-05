@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="js/form.js"></script>
+    <script defer src="js/requests.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="btncontainer">
+        <button id="btn" class="js-open-modal" data-modal="form">Add new post</button>
+    </div>
+    <div class="form" data-modal="form">
+        <div  class="form__center form__type">
+            <p>Choose type</p>
+            <select class="type">
+                <option>audio</option>
+                <option>video</option>
+                <option>text</option>
+             </select>
+        </div>
+        
+        <div class=" form__center form__img">
+            <p>Paste a link</p>
+            <input id="link" type="text">
+        </div>
+        <div class=" form__center form__title">
+            <p>Write yout title</p>
+            <input  id="title" type="text">
+
+
+        </div>
+        <div class="form__center form__date">
+            <p>Write date</p>
+            <input  id="date" type="text">
+        </div>
+        <div class="form__center form__descr">
+            <p>Write description</p>
+            <input id="descr" type="text">
+        </div>
+        <div class="form__center form__quote">
+            <p>Write quote</p>
+            <input id="quote" type="text">
+        </div>
+        <div class="form__center form__quote">
+            <p>Write author</p>
+            <input id="author" type="text">
+        </div>
+        <div class="form__submit--container">
+            <button class="form__submit"> Submit</button>
+        </div>
+        
+    </div>
+    <div>
+
+        <div class="overlay"></div>
+    
+    
+</div>
+</body>
+</html>

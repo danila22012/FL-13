@@ -1,0 +1,38 @@
+/* TODO: your styles goes here*/
+*{
+    box-sizing: border-box;
+    
+}
+#root{
+    display: flex;
+    justify-content: center;
+}
+ul{
+    list-style: none;
+    /* padding: 50px 100px; */
+    width: 400px;
+    overflow: hidden;
+}
+.menu{
+    padding: 15px 25px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+.container{
+    box-shadow: 0 0 13px 2px black;
+}
+.menu li {
+    margin: 5px 0;
+}
+.icon{
+    float: left;
+}
+ul li div{
+    height: 24px;
+}
+ul li div:hover{
+    background: rgb(209, 209, 209);
+    
+    
+}
