@@ -285,8 +285,9 @@
       width: 165px; }
   .latestPortfolio__content {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap; }
+    transition: 0.4s; }
+  .latestPortfolio .slider__rapper {
+    overflow: hidden; }
   .latestPortfolio__buttons {
     margin: auto;
     display: flex;
@@ -322,7 +323,7 @@
     margin-top: 40px; }
 
 .portfolioItem {
-  position: relative;
+  position: absolute;
   background: url("../img/bg img1.png") center no-repeat;
   display: flex;
   height: 244px;

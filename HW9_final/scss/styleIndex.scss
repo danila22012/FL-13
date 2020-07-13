@@ -336,9 +336,12 @@
     }
     &__content{
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
+        transition: 0.4s;
     }
+    .slider__rapper{
+        overflow: hidden;
+    }
+    
     &__buttons{
         margin: auto;
         display: flex;
@@ -392,7 +395,7 @@
 
 }
 .portfolioItem{
-    position: relative;
+    position: absolute;
     background: url('../img/bg img1.png') center no-repeat;
     
     display: flex;
@@ -786,7 +789,9 @@
         }
         &__content{
             margin-top: 0;
-            ;
+            
+            
+            
         }
         &__buttons{
             max-width: 500px;
