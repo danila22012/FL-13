@@ -486,13 +486,22 @@
             display: flex;
             justify-content: center;    
             align-items: center;
-            max-width: 560px;
-            
+            min-width: 620px;
+            max-height: 265px;
             
             background: $font-color;
             border-radius: 6px;
-            margin: 0 30px;
+            
 
+        }
+        &--bg{
+            transition: 0.4s;
+            display: flex;
+            max-width: 620px;
+        }
+        .slider__rapper{
+            overflow: hidden;
+            margin: 0 30px;
         }
          
     }
@@ -895,9 +904,12 @@
                 margin-bottom: 25px;
                 flex-wrap: wrap;
                 max-width: 280px;
-                .blockquote{
+                .blockquote{    
                     max-width: 280px;
                 }
+            }
+            &--bg{
+                overflow: hidden;
             }
             
         }

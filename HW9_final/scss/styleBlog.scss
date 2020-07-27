@@ -8,6 +8,10 @@
     color: $font-color;
    
 }
+a{
+    text-decoration: none !important;
+    
+}
 .center{
     max-width: 1160px;
     margin: 0 auto;
@@ -23,6 +27,24 @@
     transition: 0.3s;
 }
 .button:hover{
+    background-color:$font-color;
+    color:#fff
+    
+}
+.LinkToPost{
+    border: 1px solid $font-color;
+    color: $font-color;
+    font-size: 15px;
+    border-radius: 5px;
+    background:rgba($color: #fff, $alpha: 0) ;
+    padding:10px 26px;
+    outline: none;
+    transition: 0.3s;
+    width: 125px;
+    display: block;
+    margin-bottom: 25px;
+}
+.LinkToPost:hover{
     background-color:$font-color;
     color:#fff
 }
@@ -125,10 +147,7 @@
             background: url('../img/Image post 3.png') center/cover no-repeat;
         }
         
-       .LinkToPost{
-           width: 100%;
-           height: 100%;
-       }
+       
       
         &--caption{
             background: #FCF6F6;
@@ -243,7 +262,9 @@
     }
     &__btn{
         margin-bottom: 40px;
+        
     }
+
     &__audio{
         height: 37px;
          width: 214px;

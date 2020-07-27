@@ -388,9 +388,16 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      max-width: 560px;
+      min-width: 620px;
+      max-height: 265px;
       background: #4D4C49;
-      border-radius: 6px;
+      border-radius: 6px; }
+    .testimonials__content--bg {
+      transition: 0.4s;
+      display: flex;
+      max-width: 620px; }
+    .testimonials__content .slider__rapper {
+      overflow: hidden;
       margin: 0 30px; }
 
 .blockquote__cite, .blockquote__author, .blockquote__position {
@@ -663,6 +670,8 @@
     max-width: 280px; }
     .testimonials__content--container .blockquote {
       max-width: 280px; }
+  .testimonials__content--bg {
+    overflow: hidden; }
 
   .header__center {
     margin-top: 50px; }
